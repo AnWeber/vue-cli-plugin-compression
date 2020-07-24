@@ -1,0 +1,23 @@
+{
+  "name": "vue-cli-plugin-compression",
+  "version": "1.0.0",
+  "description":  "Prepare compressed versions of assets to serve them with Content-Encoding",
+  "main": "index.js",
+  "keywords": [
+    "brotli",
+    "gzip",
+    "compression",
+    "vue",
+    "vue-cli",
+    "compression-webpack-plugin"
+  ],
+  "author": "weber.andreas@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli": "^4.4.6",
+    "@vue/cli-service": "^4.4.6"
+  },
+  "dependencies": {
+    "compression-webpack-plugin": "^4.0.0"
+  }
+}
