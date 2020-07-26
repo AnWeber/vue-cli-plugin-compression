@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-compression",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description":  "Prepare compressed versions of assets to serve them with Content-Encoding",
   "main": "index.js",
   "repository":"https://github.com/AnWeber/vue-cli-plugin-compression",
@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "compression-webpack-plugin": "^4.0.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
   }
 }
