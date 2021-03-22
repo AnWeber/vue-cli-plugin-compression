@@ -1,4 +1,5 @@
 const CompressionPlugin = require('compression-webpack-plugin');
+const zlib = require("zlib");
 
 
 module.exports = (api, options) => {
@@ -10,7 +11,9 @@ module.exports = (api, options) => {
         algorithm: 'brotliCompress',
         include: /\.(js|css|html|svg|json)(\?.*)?$/i,
         compressionOptions: {
-          level: 11,
+          params: {
+            [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+          },
         },
         minRatio: 0.8,
       },

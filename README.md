@@ -28,7 +28,9 @@ module.exports = {
         algorithm: 'brotliCompress',
         include: /\.(js|css|html|svg|json)(\?.*)?$/i,
         compressionOptions: {
-          level: 11,
+          params: {
+            [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+          },
         },
         minRatio: 0.8,
       },

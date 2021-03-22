@@ -1,9 +1,9 @@
 {
   "name": "vue-cli-plugin-compression",
-  "version": "1.0.3",
-  "description":  "Prepare compressed versions of assets to serve them with Content-Encoding",
+  "version": "1.1.0",
+  "description": "Prepare compressed versions of assets to serve them with Content-Encoding",
   "main": "index.js",
-  "repository":"https://github.com/AnWeber/vue-cli-plugin-compression",
+  "repository": "https://github.com/AnWeber/vue-cli-plugin-compression",
   "homepage": "https://github.com/AnWeber/vue-cli-plugin-compression",
   "bugs": "https://github.com/AnWeber/vue-cli-plugin-compression/issues",
   "keywords": [
@@ -16,14 +16,10 @@
   ],
   "author": "weber.andreas@gmail.com",
   "license": "MIT",
-  "devDependencies": {
-    "@vue/cli": "^4.4.6",
-    "@vue/cli-service": "^4.4.6"
-  },
   "dependencies": {
-    "compression-webpack-plugin": "^4.0.0"
+    "compression-webpack-plugin": "^7.1.2"
   },
   "peerDependencies": {
-    "webpack": "^4.0.0 || ^5.0.0"
+    "webpack": "^5.1.0"
   }
 }
