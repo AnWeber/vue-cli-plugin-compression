@@ -20,6 +20,7 @@ vue add compression
 `vue-cli-plugin-compression` default configuration in `vue.config.js`:
 
 ```js
+const zlib = require("zlib");
 module.exports = {
   pluginOptions: {
     compression:{
