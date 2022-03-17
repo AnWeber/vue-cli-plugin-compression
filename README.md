@@ -65,6 +65,19 @@ module.exports = {
 }
 ```
 
+Compression Webpack plugin is enabled only in `production` mode by default. However, this can be overridden by specifying the option `modes`
+
+```js
+module.exports = {
+  pluginOptions: {
+    compression:{
+      modes: ['development', 'production'],
+     ...
+    }
+  }
+}
+```
+
 ## Injected webpack-chain Rules
 
 - `config.plugins('brotli-compression')`
