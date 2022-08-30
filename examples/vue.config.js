@@ -1,5 +1,7 @@
 const zlib = require("zlib");
-module.exports = {
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: true,
   pluginOptions: {
     compression: {
       modes: ['development', 'production'],
@@ -22,4 +24,4 @@ module.exports = {
       }
     }
   }
-}
+});
